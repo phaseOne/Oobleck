@@ -1,7 +1,7 @@
 {
     "name": "Oobleck",
     "version": "0.1.0",
-    "description": "",
+    "description": "A customizable fluid-grid framework for Stylus. Based on code from cssgrid.net and Columnal.",
     "author": "Evan Bovie <evan@bovie.me>",
     "maintainers": [
         { "name": "Evan Bovie", "email": "evan@bovie.me", "web": "http://phaseone.me" }
@@ -10,6 +10,7 @@
         { "name": "Evan Bovie", "email": "evan@bovie.me", "web": "http://phaseone.me" }
     ],
     "bugs": { "url": "https://github.com/phaseOne/Oobleck/issues" },
+    "homepage": "http://phaseone.github.com/Oobleck/",
     "licenses": [
         { "type": "EPL", "url": "http://www.opensource.org/licenses/eclipse-1.0.php" }
     ],
