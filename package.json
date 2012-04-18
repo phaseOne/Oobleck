@@ -1,0 +1,22 @@
+{
+    "name": "Oobleck",
+    "version": "0.1.0",
+    "description": "",
+    "author": "Evan Bovie <evan@bovie.me>",
+    "maintainers": [
+        { "name": "Evan Bovie", "email": "evan@bovie.me", "web": "http://phaseone.me" }
+    ],
+    "contributors": [
+        { "name": "Evan Bovie", "email": "evan@bovie.me", "web": "http://phaseone.me" }
+    ],
+    "bugs": { "url": "https://github.com/phaseOne/Oobleck/issues" },
+    "licenses": [
+        { "type": "EPL", "url": "http://www.opensource.org/licenses/eclipse-1.0.php" }
+    ],
+    "repository": "git://github.com/phaseOne/Oobleck.git",
+    "dependencies": {
+        "stylus": ">= 0.20.0"
+    },
+    "keywords": ["css", "grid", "style", "stylesheets", "stylus", "framework", "fluid", "oobleck"],
+    "engines" : { "node":">= 0.6.15 < 0.7.0" }
+}
