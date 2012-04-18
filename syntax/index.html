@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Oobleck: Syntax</title>
+
+    <link rel="stylesheet" href="../stylesheets/styles.css">
+    <link rel="stylesheet" href="../stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Oobleck - Syntax</h1>
+        <p>Behold the first non-Newtonian fluid for Stylus!</p>
+        <p>
+        	<a href="../demo"><strong>DEMO</strong></a><br>
+        	<a href="../index.html#features"><strong>FEATURES</strong></a><br>
+        	<a href="../index.html#defaults"><strong>DEFAULTS</strong></a><br>
+        	<a href="."><strong>SYNTAX</strong></a><br>
+        	<a href="../index.html#license"><strong>LICENSE</strong></a>
+        </p>
+        <a href="http://travis-ci.org/phaseOne/Oobleck"><img src="https://secure.travis-ci.org/phaseOne/Oobleck.png?branch=master" alt="Build Status"></a>
+        <p class="view"><a href="https://github.com/phaseOne/Oobleck">View the Project on GitHub <small>phaseOne/Oobleck</small></a></p>
+        <ul>
+          <li><a>npm install <strong>Oobleck</strong></a></li>
+          <li><a href="https://github.com/phaseOne/Oobleck/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/phaseOne/Oobleck">Fork On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section><h2>Basic example</h2>
+
+<pre><code>@import oobleck
+#container
+  container()
+  #mainfocus
+    row()
+    #gianttagline
+      span 12
+  #detailedinfo
+    row()
+    #sec1
+      span 4
+    #sec2
+      span 4
+    #sec3
+      span 4 true
+</code></pre>
+
+<p>You probably thought, &ldquo;WTF was that?&rdquo; Let me break it down for you.</p>
+
+<h2>The breakdown</h2>
+
+<p><code>@import oobleck</code> loads Oobleck into your .styl file.</p>
+
+<p><code>container()</code> turns the div into a container. This will make the div the full page width (the width of the browser with 20px of padding inside on the left and right). You can use one big container, or use multiple to break the page horizontally.</p>
+
+<p><code>row()</code> turns the div into a row of columns. It centers them and defines the 1280px max-width of the content.</p>
+
+<p><code>span(#,["true"])</code> defines the width of the column. If you add <code>true</code> to the end of the mixin, it will remove the gutter of the column. You can nest columns up to one extra level.</p>
+
+<p>Now that you have the basics, read on for the full syntax.</p>
+
+<h2>The syntax</h2>
+
+<h3>Import</h3>
+
+<p>Loads Oobleck into your .styl file.</p>
+
+<pre><code>@import oobleck
+</code></pre>
+
+<h3>Containers</h3>
+
+<p>Turns the div into a container. This will make the div the full page width (the width of the browser with 20px of padding inside on the left and right). You can use one big container, or use multiple to break the page horizontally.</p>
+
+<pre><code>container()
+</code></pre>
+
+<h3>Rows</h3>
+
+<p>Turns the div into a row of columns. It centers them and defines the 1280px max-width of the content.</p>
+
+<pre><code>row()
+</code></pre>
+
+<h3>Columns</h3>
+
+<h4>Width</h4>
+
+<p>Defines the width of the column. If you add <code>true</code> to the end of the mixin, it will remove the gutter of the column. You can nest columns up to one extra level.</p>
+
+<pre><code>span 4  // Regular column
+
+span 6 last // Removes gutter
+
+span 12  // Automatically sets as last column based on max number of columns
+</code></pre>
+
+<h4>Prepend</h4>
+
+<p>Adds space before the column</p>
+
+<pre><code>prepend 2
+</code></pre>
+
+<h4>Append</h4>
+
+<p>Adds space after the column</p>
+
+<pre><code>append 2
+</code></pre>
+
+<h3>Mobile</h3>
+
+<h4>Hide from mobile browser</h4>
+
+<p>Only display this content in wider browsers (not mobile browsers)</p>
+
+<pre><code>d-only()
+</code></pre>
+
+<h4>Only show in mobile browser</h4>
+
+<p>Only display this content in mobile browsers (smaller window)</p>
+
+<pre><code>m-only()
+</code></pre></section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/phaseOne">phaseOne</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="../javascripts/scale.fix.js"></script>
+
+  </body>
+</html>
